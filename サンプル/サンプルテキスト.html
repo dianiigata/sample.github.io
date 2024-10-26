@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>予約システム</title>
+</head>
+<body>
+  <h1>予約システム</h1>
+  <form action="submit.php" method="post">
+    <label for="name">氏名：</label>
+    <input type="text" id="name" name="name">
+    <br>
+    <label for="email">メールアドレス：</label>
+    <input type="email" id="email" name="email">
+    <br>
+    <label for="date">予約日：</label>
+    <input type="date" id="date" name="date">
+    <br>
+    <label for="time">予約時間：</label>
+    <select id="time" name="time">
+      <option value="10:00">10:00</option>
+      <option value="11:00">11:00</option>
+      <option value="12:00">12:00</option>
+      <option value="13:00">13:00</option>
+    </select>
+    <br>
+    <input type="submit" value="予約">
+  </form>
+</body>
+</html>
